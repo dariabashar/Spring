@@ -1,0 +1,9 @@
+logging:
+  level:
+    root: INFO
+    com.example.practice1: DEBUG
+
+app:
+  id:
+    min-id-length: 9
+    max-id-length: 9
