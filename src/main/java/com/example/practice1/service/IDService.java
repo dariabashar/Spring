@@ -1,5 +1,6 @@
 package com.example.practice1.service;
 
+import com.example.practice1.audit.IdAuditor;
 import com.example.practice1.config.AppIdProperties;
 import org.springframework.stereotype.Service;
 
@@ -7,9 +8,11 @@ import org.springframework.stereotype.Service;
 public class IDService {
 
     private final AppIdProperties properties;
+    private final IdAuditor auditor;
 
-    public IDService(AppIdProperties properties) {
+    public IDService(AppIdProperties properties, IdAuditor auditor) {
         this.properties = properties;
+        this.auditor = auditor;
     }
 
     public String getId(String id) {
@@ -19,6 +22,7 @@ public class IDService {
         if (id.length() > properties.maxIdLength()) {
             return "ID is too long, maximum length is " + properties.maxIdLength();
         }
+        auditor.audit(id);
         return properties.greeting() + " " + id;
     }
 }

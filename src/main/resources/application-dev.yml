@@ -7,3 +7,5 @@ app:
   id:
     min-id-length: 9
     max-id-length: 9
+  audit:
+      enabled: true
