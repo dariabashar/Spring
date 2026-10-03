@@ -9,6 +9,5 @@ public class NoopIdAuditor implements IdAuditor {
 
     @Override
     public void audit(String id) {
-        // auditing is turned off
     }
 }
