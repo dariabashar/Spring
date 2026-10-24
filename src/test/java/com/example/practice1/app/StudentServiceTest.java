@@ -1,15 +1,14 @@
-package com.example.practice1.service;
+package com.example.practice1.app;
 
 import com.example.practice1.audit.IdAuditor;
 import com.example.practice1.config.AppIdProperties;
-import com.example.practice1.dto.StudentRequest;
-import com.example.practice1.dto.StudentResponse;
-import com.example.practice1.entity.StudentEntity;
+import com.example.practice1.web.dto.StudentRequest;
+import com.example.practice1.web.dto.StudentResponse;
+import com.example.practice1.infra.StudentEntity;
 import com.example.practice1.exception.BadRequestException;
 import com.example.practice1.exception.ConflictException;
 import com.example.practice1.exception.NotFoundException;
-import com.example.practice1.mapper.StudentMapper;
-import com.example.practice1.repository.StudentRepository;
+import com.example.practice1.infra.StudentRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

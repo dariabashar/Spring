@@ -1,4 +1,4 @@
-package com.example.practice1.service;
+package com.example.practice1.app;
 
 import com.example.practice1.audit.IdAuditor;
 import com.example.practice1.config.AppIdProperties;

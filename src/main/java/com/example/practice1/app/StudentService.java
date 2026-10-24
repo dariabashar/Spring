@@ -1,15 +1,14 @@
-package com.example.practice1.service;
+package com.example.practice1.app;
 
 import com.example.practice1.audit.IdAuditor;
 import com.example.practice1.config.AppIdProperties;
 import com.example.practice1.domain.Student;
-import com.example.practice1.dto.StudentRequest;
-import com.example.practice1.dto.StudentResponse;
+import com.example.practice1.web.dto.StudentRequest;
+import com.example.practice1.web.dto.StudentResponse;
 import com.example.practice1.exception.BadRequestException;
 import com.example.practice1.exception.ConflictException;
 import com.example.practice1.exception.NotFoundException;
-import com.example.practice1.mapper.StudentMapper;
-import com.example.practice1.repository.StudentRepository;
+import com.example.practice1.infra.StudentRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

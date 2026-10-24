@@ -1,6 +1,5 @@
-package com.example.practice1.repository;
+package com.example.practice1.infra;
 
-import com.example.practice1.entity.StudentEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

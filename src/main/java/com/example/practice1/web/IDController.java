@@ -1,6 +1,6 @@
-package com.example.practice1.controller;
+package com.example.practice1.web;
 
-import com.example.practice1.service.IDService;
+import com.example.practice1.app.IDService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

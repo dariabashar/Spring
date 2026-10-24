@@ -1,6 +1,5 @@
-package com.example.practice1.repository;
+package com.example.practice1.infra;
 
-import com.example.practice1.entity.StudentEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;

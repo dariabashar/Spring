@@ -1,9 +1,9 @@
-package com.example.practice1.mapper;
+package com.example.practice1.app;
 
 import com.example.practice1.domain.Student;
-import com.example.practice1.dto.StudentRequest;
-import com.example.practice1.dto.StudentResponse;
-import com.example.practice1.entity.StudentEntity;
+import com.example.practice1.web.dto.StudentRequest;
+import com.example.practice1.web.dto.StudentResponse;
+import com.example.practice1.infra.StudentEntity;
 import org.springframework.stereotype.Component;
 
 @Component

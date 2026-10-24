@@ -1,8 +1,8 @@
-package com.example.practice1.controller;
+package com.example.practice1.web;
 
-import com.example.practice1.dto.StudentRequest;
-import com.example.practice1.dto.StudentResponse;
-import com.example.practice1.service.StudentService;
+import com.example.practice1.web.dto.StudentRequest;
+import com.example.practice1.web.dto.StudentResponse;
+import com.example.practice1.app.StudentService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

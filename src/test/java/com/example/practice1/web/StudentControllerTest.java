@@ -1,9 +1,9 @@
-package com.example.practice1.controller;
+package com.example.practice1.web;
 
-import com.example.practice1.dto.StudentRequest;
-import com.example.practice1.dto.StudentResponse;
+import com.example.practice1.web.dto.StudentRequest;
+import com.example.practice1.web.dto.StudentResponse;
 import com.example.practice1.exception.NotFoundException;
-import com.example.practice1.service.StudentService;
+import com.example.practice1.app.StudentService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
