@@ -4,8 +4,9 @@ logging:
     com.example.practice1: DEBUG
 
 app:
-  id:
-    min-id-length: 9
-    max-id-length: 9
   audit:
-      enabled: true
+    enabled: true
+
+spring:
+  jpa:
+    show-sql: true

@@ -1,22 +1,17 @@
-Practice 1
+Practice 4
 
-Spring Boot project with a REST endpoint `POST /api/id`, dev/test profiles
-and typed configuration (`AppIdProperties`).
+REST students API with PostgreSQL, Spring Data JPA, paging and Flyway.
 
-Run  :  ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+Start the database:
 
-`IdAuditor` has two implementations, chosen by the property `app.audit.enabled`:
-`true` - `LoggingIdAuditor` - logs the length of every accepted ID
-`false` - `NoopIdAuditor`    - does nothing
+    docker compose up -d
 
-The `dev` profile sets it to `true`, the `test` profile sets it to `false`.
+Run the app:
 
-Condition ON:
+    ./mvnw spring-boot:run
 
-    ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+Examples:
 
-Condition OFF:
-
-    ./mvnw spring-boot:run -Dspring-boot.run.profiles=test
-
-Trying:  curl -X POST http://localhost:8080/api/id -H "Content-Type: text/plain" -d "23B030286"
+    curl "http://localhost:8080/api/students?page=0&size=20"
+    curl "http://localhost:8080/api/students/search?name=Aida"
+    curl -X POST http://localhost:8080/api/students -H "Content-Type: application/json" -d '{"uniId":"23B030003","fullName":"New Student"}'
